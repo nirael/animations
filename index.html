@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>       
+	const modernBrowser = (
+        'fetch' in window &&
+        'assign' in Object
+      );
+      if ( !modernBrowser ) {
+        const scriptElement = document.createElement('script');
+        scriptElement.async = false;
+        scriptElement.src = '/polyfills.bundle.js';
+        document.head.appendChild(scriptElement);
+      }
+   </script>
+</body>
+</html>
