@@ -90,7 +90,7 @@ function generatePageCollapse(){
 		stepDuration: 200,
 		randomizeSteps: true
 	});*/
-	const testCollapse = new collapseDiagonal({
+	/*const testCollapse = new collapseDiagonal({
 		el: content.img,
 		noOverflow: true,
 		rows: 8,
@@ -98,15 +98,15 @@ function generatePageCollapse(){
 		duration: 100,
 		delay: 100,
 
-	})
-	/*const testCollapse = new collapseShuffle({
+	})*/
+	const testCollapse = new collapseShuffle({
 		el: content.img,
 		noOverflow: true,
 		rows: 4,
 		cols: 4,
 		duration: 500,
 		//delay: 100,
-	})*/
+	})
 	const changePicture = "https://picsum.photos/id/238/2000/2000";
 	buttons.activatePicture.onclick = testCollapse.activate.bind(testCollapse);
 	//buttons.animatePicture.onclick = testCollapse.animateOnDemand.bind(testCollapse);
