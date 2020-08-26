@@ -29,7 +29,7 @@ class StyleSetter{
 			this.boundElementStyles.push({el, initDec})	
 		}else{
 			for(let prop in this.style){
-				el.style[prop] = this.style[prop];;
+				el.style[prop] = this.style[prop];
 			}
 		}
 	}
